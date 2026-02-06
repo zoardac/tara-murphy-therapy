@@ -1,0 +1,33 @@
+---
+---
+
+<header class="fixed top-0 w-full px-[5%] py-6 bg-gradient-to-b from-cream to-cream/95 backdrop-blur-md z-50 border-b border-olive/15">
+  <nav class="flex justify-between items-center max-w-[1400px] mx-auto">
+    <div class="flex items-center">
+      <img src="/TARA_MURPHY_THERAPY.png" alt="Tara Murphy Therapy" class="h-[60px] w-auto" />
+    </div>
+    <ul class="flex gap-12 list-none">
+      <li><a href="#about" class="text-gray-blue no-underline text-[0.95rem] relative transition-colors duration-300 tracking-wide hover:text-olive nav-link">About</a></li>
+      <li><a href="#services" class="text-gray-blue no-underline text-[0.95rem] relative transition-colors duration-300 tracking-wide hover:text-olive nav-link">Services</a></li>
+      <li><a href="#approach" class="text-gray-blue no-underline text-[0.95rem] relative transition-colors duration-300 tracking-wide hover:text-olive nav-link">Approach</a></li>
+      <li><a href="#contact" class="text-gray-blue no-underline text-[0.95rem] relative transition-colors duration-300 tracking-wide hover:text-olive nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: theme('colors.olive');
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+</style>

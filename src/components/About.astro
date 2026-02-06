@@ -1,0 +1,60 @@
+---
+---
+
+<section id="about" class="relative py-24 px-[5%] max-w-[1400px] mx-auto">
+  <h2 class="section-title font-serif text-5xl font-normal text-blue-black text-center mb-16 relative">
+    About
+    <span class="block mt-4 text-blush text-xl opacity-60">✦</span>
+  </h2>
+  
+  <div class="grid md:grid-cols-2 gap-24 items-center mb-16">
+    <div class="about-image w-full h-[500px] rounded-sm relative overflow-hidden border-2 border-olive/20">
+      <span class="absolute bottom-5 right-5 text-8xl opacity-[0.08]">🌿</span>
+    </div>
+    
+    <div class="about-text">
+      <h3 class="font-serif text-3xl text-olive mb-6 font-normal">Welcome</h3>
+      <p class="text-gray-blue text-lg mb-6 leading-relaxed">
+        I believe healing happens when we reconnect with our most authentic selves and the natural world around us. My practice integrates traditional therapeutic approaches with nature-based wisdom, creating a space where transformation unfolds organically.
+      </p>
+      <p class="text-gray-blue text-lg mb-6 leading-relaxed">
+        Drawing from the rhythms of the Pacific Northwest landscape, I help clients navigate life's challenges with gentleness and intention. Whether you're processing grief, exploring identity, or seeking deeper meaning, you'll find a compassionate witness here.
+      </p>
+      <p class="text-gray-blue text-lg leading-relaxed">
+        My approach honors the cyclical nature of healing—just as the forest transforms through seasons, so too do we grow through periods of darkness and light.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-image {
+    background: linear-gradient(135deg, rgba(212, 165, 165, 0.15) 0%, rgba(107, 124, 93, 0.12) 100%);
+  }
+
+  .about-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(107, 124, 93, 0.02) 2px, rgba(107, 124, 93, 0.02) 4px),
+      repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(107, 124, 93, 0.02) 2px, rgba(107, 124, 93, 0.02) 4px);
+  }
+
+  section::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
+    top: -100px;
+    right: -150px;
+    background: radial-gradient(circle, theme('colors.olive') 0%, transparent 70%);
+  }
+</style>
